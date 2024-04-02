@@ -14,6 +14,7 @@ export  default class ControlFlowComponent {
 
   public  showContent = signal(false)
   public  grade = signal<Grade>('B');
+  public  framwork = signal(['Angular','React','Veu'])
 
 
   public toggleContent(){

@@ -9,20 +9,16 @@
             (click)="toggleContent()">
             Click
         </button>
-
         @if(showContent()){
             <p>hola mundo</p>
         }@else {
             <p>****************</p>
         }
-
     </div>
 
 
-
-     <!-- Swithch -->
-     <div class="bg-white rounded shadow p-10">
-        
+    <!-- Swithch -->
+    <div class="bg-white rounded shadow p-10">
         @switch (grade()) {
             @case ('A') {
                 <P>Aprobado con calificacion de <strong>{{grade()}}</strong>  </P>
@@ -39,5 +35,19 @@
     </div>
 
 
+    <!-- for
     
+    https://next.angular.io/api/core/for
+    -->
+    <div class="bg-white rounded shadow p-10">
+        
+        @for (item of framwork(); track item; let idx = $index  ) {
+            <ul>
+                {{ idx + 1}} : {{ item }}
+            </ul>
+
+        }
+        
+    </div>
+
 </section>
