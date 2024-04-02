@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './chace-detection.component.html',
   styleUrl: './chace-detection.component.css'
 })
-export class ChaceDetectionComponent {
+export default class ChaceDetectionComponent {
 
 }
