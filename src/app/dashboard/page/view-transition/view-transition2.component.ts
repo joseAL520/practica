@@ -8,8 +8,8 @@ import { TitleComponent } from '../../../shared/title/title.component';
   standalone: true,
   template:`
 
-    <app-title title="View Transition 1 "/>
-    <section class="flex justify-start">
+    <app-title title="View Transition 2 "/>
+    <section class="flex justify-end">
         <img 
           srcset="https://picsum.photos/id/237/200/300" 
           alt="picture" width="200" 
